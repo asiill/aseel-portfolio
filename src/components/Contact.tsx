@@ -12,10 +12,6 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 
     e.preventDefault();
-    setState(prevState => ({
-      ...prevState,
-      submitted: true
-    }));
 
   };
 

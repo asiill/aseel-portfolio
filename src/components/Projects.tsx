@@ -15,7 +15,7 @@ function ProjectCard({ id, name, description, tools, path, links }: ProjectCardP
   return (
       <div className="flex flex-col items-center gap-6 min-w-44 shadow-md hover:shadow-lg transition-shadow md:grid md:grid-cols-2">
           <div className={`${id % 2 === 0 ? "md:order-first" : "md:order-last"} span-1`}>
-          <img src={path} alt={name} className="min-w-44 w-[640px] h-[360px]"></img>
+          <img src={path} alt={name} width={640} height={360} className="min-w-44"></img>
           </div>
           <div className="flex flex-col gap-4 items-center text-center p-4 span-1">
               <h3 className="text-xl sm:text-3xl">{name}</h3>
